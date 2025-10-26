@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2025-11-05-bedah-strategi",
+    "title": "Bedah Strategi YouTube Live + QnA",
+    "start": "2025-11-05T20:00:00+07:00",
+    "end": "2025-11-05T21:30:00+07:00",
+    "status": "upcoming",
+    "youtubeUrl": "https://youtube.com/live/XXXXXXXXXXX",
+    "thumbnail": "images/og-placeholder.png",
+    "tags": [
+      "talkshow",
+      "creator"
+    ],
+    "description": "Kupas tuntas strategi live. Bawa pertanyaanmu!"
+  },
+  {
+    "id": "2025-10-20-react-hooks",
+    "title": "Live: Algoritma Konten dan Retensi",
+    "start": "2025-10-20T20:00:00+07:00",
+    "end": "2025-10-20T21:15:00+07:00",
+    "status": "done",
+    "youtubeUrl": "https://www.youtube.com/watch?v=YYYYYYYYYYY",
+    "thumbnail": "images/og-placeholder.png",
+    "tags": [
+      "analitik",
+      "tips"
+    ],
+    "description": "Diskusi santai tentang CTR, AVD, dan pola retensi."
+  }
+]

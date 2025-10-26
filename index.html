@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jadwal Live YouTube — Channel Kamu</title>
+  <meta name="description" content="Lihat jadwal live YouTube mendatang dan arsip siaran. Dilengkapi hitung mundur, tombol tonton, dan tambah ke kalender.">
+  <meta property="og:title" content="Jadwal Live YouTube" />
+  <meta property="og:description" content="Jadwal live mendatang dan arsip siaran." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-placeholder.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="app.js" as="script" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Channel YouTube Kamu",
+    "url": "https://example.com",
+    "logo": "https://example.com/images/logo.png",
+    "sameAs": [
+      "https://www.youtube.com/@yourchannel"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">▶</div>
+      <div>
+        <h1>Jadwal Live YouTube</h1>
+        <p class="tagline">Zona waktu: WIB (Asia/Jakarta)</p>
+      </div>
+    </div>
+    <a class="subscribe" href="https://www.youtube.com/@yourchannel?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a>
+  </header>
+
+  <main class="container">
+    <!-- Next Live -->
+    <section id="next-live" class="card">
+      <h2>Live Berikutnya</h2>
+      <div id="next-live-content" class="next-live">
+        <p>Sedang memuat...</p>
+      </div>
+    </section>
+
+    <!-- Upcoming list -->
+    <section class="card">
+      <div class="section-heading">
+        <h2>Mendatang</h2>
+        <input id="search-upcoming" class="search" type="search" placeholder="Cari judul atau tag..." aria-label="Cari jadwal mendatang">
+      </div>
+      <ul id="upcoming-list" class="event-list" aria-live="polite"></ul>
+    </section>
+
+    <!-- Past list -->
+    <section class="card">
+      <div class="section-heading">
+        <h2>Arsip</h2>
+        <input id="search-past" class="search" type="search" placeholder="Cari arsip..." aria-label="Cari arsip siaran">
+      </div>
+      <ul id="past-list" class="event-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Channel Kamu. Dibuat ringan, statis, dan cepat.</p>
+  </footer>
+
+  <!-- Lightweight modal for embed -->
+  <dialog id="playerDialog">
+    <div class="dialog-header">
+      <strong id="playerTitle">Menonton</strong>
+      <button id="closeDialog" class="btn-secondary" aria-label="Tutup">Tutup</button>
+    </div>
+    <div id="playerWrap" class="player-wrap" role="region" aria-label="Pemutar YouTube"></div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
